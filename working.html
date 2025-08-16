@@ -20,9 +20,34 @@
             text-align: center;
             padding-top: 50px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-    
         }
+
+        /* Animações do texto */
+        .painel h1, .painel h2, .painel h3 {
+            opacity: 0;
+            transform: translateY(20px);
+            animation-fill-mode: forwards;
+        }
+
+        .painel h1 {
+            animation: slideIn 0.8s ease-out 0.2s;
+        }
+
+        .painel h2 {
+            animation: slideIn 0.8s ease-out 0.5s;
+        }
+
+        .painel h3 {
+            animation: slideIn 0.8s ease-out 0.8s;
+        }
+
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
     </style>
 
 </head>
@@ -33,19 +58,12 @@
         <h2>Planejei a gente ir ao bistrô entre 19:30 e 20:00. Eu posso passar na sua casa e te buscar.</h2>
         <h3>Se tiver alguma sugestão de lugar que você queira ir, me conta! 😊</h3>
 
-        
         <img src="https://mega.ibxk.com.br/2020/02/12/a-12150750350377.gif?ims=fit-in/800x500" alt="">
 
-    
-
-        
-       
-        
     </div>
-
-    
 
 </body>
 </html>
+
 
 
