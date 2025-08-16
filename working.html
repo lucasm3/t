@@ -7,25 +7,28 @@
     <title>Learning HTML</title>
 
     <style>
-
         body{
             background-color: #af1212d2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
 
         .painel{
-            margin:auto;
             width: 500px;
-            height: 500px;
             border-radius: 20px;
             text-align: center;
-            padding-top: 50px;
+            padding: 50px 20px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgba(255,255,255,0.1);
         }
 
         /* Animações do texto */
         .painel h1, .painel h2, .painel h3 {
             opacity: 0;
-            transform: translateY(20px);
+            transform: translateY(50px);
             animation-fill-mode: forwards;
         }
 
@@ -34,11 +37,11 @@
         }
 
         .painel h2 {
-            animation: slideIn 0.8s ease-out 0.5s;
+            animation: slideIn 0.8s ease-out 0.6s;
         }
 
         .painel h3 {
-            animation: slideIn 0.8s ease-out 0.8s;
+            animation: slideIn 0.8s ease-out 1s;
         }
 
         @keyframes slideIn {
@@ -48,8 +51,16 @@
             }
         }
 
-    </style>
+        img {
+            margin-top: 20px;
+            max-width: 100%;
+            border-radius: 15px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: slideIn 0.8s ease-out 1.4s forwards;
+        }
 
+    </style>
 </head>
 <body>
     
@@ -64,6 +75,7 @@
 
 </body>
 </html>
+
 
 
 
